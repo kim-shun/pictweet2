@@ -3,11 +3,7 @@
   <% @tweets.each do |tweet| %>
     <div class="content_post" style="background-image: url(<%= tweet.image %>);">
       <p><%= tweet.text %></p>
-      <span class="name">
-        <a href="/users/<%= @tweet.user.id %>">
-          <span>投稿者</span><%= @tweet.user.nickname %>
-        </a>
-      </span>
+      <span class="name"><%= tweet.name %></span>
     </div>
   <% end %>
 </div>
