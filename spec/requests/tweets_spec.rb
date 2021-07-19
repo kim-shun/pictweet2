@@ -1,10 +1,19 @@
 require 'rails_helper'
 
-RSpec.describe "Tweets", type: :request do
-  describe "GET /tweets" do
-    it "works! (now write some real specs)" do
-      get tweets_index_path
-      expect(response).to have_http_status(200)
+describe TweetsController, type: :request do
+
+  before do
+    @tweet = FactoryBot.create(:tweet)
+  end
+
+  describe 'GET #index' do
+    it 'indexアクションにリクエストすると正常にレスポンスが返ってくる' do 
+    end
+    it 'indexアクションにリクエストするとレスポンスに投稿済みのツイートのテキストが存在する' do 
+    end
+    it 'indexアクションにリクエストするとレスポンスに投稿済みのツイートの画像URLが存在する' do 
+    end
+    it 'indexアクションにリクエストするとレスポンスに投稿検索フォームが存在する' do 
     end
   end
 end
