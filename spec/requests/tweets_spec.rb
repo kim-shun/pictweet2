@@ -8,6 +8,8 @@ describe TweetsController, type: :request do
 
   describe 'GET #index' do
     it 'indexアクションにリクエストすると正常にレスポンスが返ってくる' do 
+      get root_path
+      binding.pry
     end
     it 'indexアクションにリクエストするとレスポンスに投稿済みのツイートのテキストが存在する' do 
     end
