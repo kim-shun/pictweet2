@@ -42,7 +42,7 @@ RSpec.describe 'ツイート投稿', type: :system do
       # トップページに遷移する
       visit root_path
       # 新規投稿ページへのボタンがないことを確認する
-      
+      expect(page).to have_no_content('投稿する')
     end
   end
 end
